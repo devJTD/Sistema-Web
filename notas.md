@@ -1,3 +1,0 @@
-<<<<<<< HEAD
-//linea rama main
-=======
