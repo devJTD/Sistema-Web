@@ -1,47 +1,50 @@
-🎓 Presentación del Proyecto: Sistema Web de Matrícula – CEPMiMundoFeliz
-📌 Introducción
-El proyecto Sistema Web de Matrícula CEPMiMundoFeliz busca digitalizar y optimizar los procesos administrativos y académicos de una institución educativa. Está diseñado para facilitar la gestión de usuarios, matrículas, asistencias, pagos y notas, brindando una plataforma accesible y organizada para administradores, secretarias, profesores y estudiantes.
+# 🎓 Sistema Web de Matrícula – CEPMiMundoFeliz
 
-🎯 Objetivos del Proyecto
-Automatizar los procesos de matrícula y registro académico.
+## 📌 Introducción
+El **Sistema Web de Matrícula CEPMiMundoFeliz** es una aplicación diseñada para digitalizar y optimizar los procesos administrativos y académicos de una institución educativa.  
+Permite gestionar de forma centralizada **usuarios, matrículas, asistencias, pagos y notas**, brindando una plataforma moderna, accesible y eficiente para **administradores, secretarias, profesores y estudiantes**.
 
-Centralizar la información en un sistema web accesible.
+---
 
-Optimizar el control de asistencias, pagos y notas.
+## 🎯 Objetivos del Proyecto
+- ✅ Automatizar los procesos de matrícula y registro académico.  
+- ✅ Centralizar la información en un sistema web accesible desde cualquier dispositivo.  
+- ✅ Optimizar el control de asistencias, pagos y calificaciones.  
+- ✅ Facilitar el trabajo de cada rol dentro de la institución mediante una interfaz clara y organizada.  
 
-Facilitar el trabajo de cada rol dentro de la institución.
+---
 
-🛠️ Tecnologías Utilizadas
+## ⚙️ Funcionalidades Principales
 
-Frontend: HTML5, CSS3, JavaScript
+### 👩‍💼 **Administrador**
+- Gestión de nómina del personal.  
+- Administración de usuarios y permisos.  
 
-Gestión de estilos: Archivos CSS personalizados
+### 🧾 **Secretaría**
+- Control y validación de asistencias.  
+- Gestión de pagos y registro de matrículas.  
+- Acceso rápido al panel principal (dashboard).  
 
-Funcionalidades dinámicas: Archivos JS (login, asistencias, matrículas, notas, pagos, QR)
+### 👨‍🏫 **Profesor**
+- Registro, consulta y actualización de notas.  
 
-📂 Estructura del proyecto
-├── assets │ ├── css │ │ ├── blog.css │ │ ├── dashboard.css │ │ ├── estudiar-aqui.css │ │ └── style.css │ └── js │ ├── asistencias.js │ ├── dashboard.js │ ├── gestion-nomina.js │ ├── gestion-usuarios.js │ ├── login.js │ ├── matriculas.js │ ├── notas.js │ ├── pagos.js │ └── qr-scanner.js ├── css │ └── style.css ├── html ├── pages │ ├── administrador │ │ ├── gestion-nomina.html │ │ └── gestion-usuarios.html │ ├── general │ │ └── asistencia-qr.html │ ├── profesor │ │ └── notas.html │ └── secretaria │ ├── asistencias.html │ ├── gestion-pagos.html │ ├── inicio.html │ ├── matriculas.html │ └── dashboard.html ├── blog.html ├── estudiar-aqui.html
+### 🎟️ **General**
+- Escaneo de códigos QR para el registro automatizado de asistencias.  
 
-⚙️ Funcionalidades principales
-Administrador
-Gestión de nómina
-Gestión de usuarios
-Secretaría
-Control de asistencias
-Gestión de pagos
-Registro de matrículas
-Profesor
-Registro y consulta de notas
-General
-Escaneo de QR para asistencias
-✅ Beneficios
+---
 
-Reducción del tiempo en trámites administrativos.
+## 🛠️ Tecnologías Utilizadas
 
-Mejor organización de la información académica.
+### 🔹 **Frontend**
+- **HTML5**, **CSS3** y **JavaScript** para la estructura, estilos y funcionalidades.  
+- **Archivos CSS personalizados** para la identidad visual y el diseño responsivo.  
+- **Archivos JS** dedicados para cada módulo del sistema:
+  - `login.js`, `asistencias.js`, `matriculas.js`, `notas.js`, `pagos.js`, `qr-scanner.js`, entre otros.
 
-Mayor control y seguridad en el acceso a datos.
+---
 
-Sistema escalable y fácil de mantener.
-
-├── favicon.ico ├── index.html └── script.js
+## 🌟 Beneficios del Sistema
+- 📉 Reducción significativa del tiempo en trámites administrativos.  
+- 🗂️ Mejor organización y trazabilidad de la información académica.  
+- 🔒 Mayor control y seguridad en el acceso a los datos.  
+- ⚡ Sistema escalable, mantenible y adaptable a futuras necesidades institucionales.  
