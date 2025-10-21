@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | CEP Mi Mundo Feliz</title>
+
+  <meta name="description" content="Página de contacto del CEP Mi Mundo Feliz. Envíanos tus consultas o solicita información sobre matrícula." />
+  <meta name="keywords" content="contacto colegio Lima, formulario, CEP Mi Mundo Feliz, teléfono, email" />
+  <meta name="author" content="CEP Mi Mundo Feliz" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Estilos de Navegación y Botones Replicados */
+    .nav-link {
+      color: #333333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #4A90E2;
+      border-bottom-color: #4A90E2;
+    }
+
+    .btn-primary {
+      background-color: #07132B;
+      color: white;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #4A90E2;
+    }
+
+    .btn-accent {
+      background-color: #FF6B35;
+      color: white;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn-accent:hover {
+      background-color: #e55c28;
+    }
+    
+    /* Estilo para la sección de encabezado adaptado del 'Nosotros' */
+    .hero-section-secondary {
+        position: relative;
+        min-height: 40vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .hero-section-secondary::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, #07132B 0%, #4A90E2 100%); /* Primary/Secondary colors */
+        opacity: 0.9;
+        z-index: 1;
+    }
+    
+    /* Sección principal de Contacto (Fondo Primario Oscuro) */
+    .contact-section {
+      padding: 80px 0;
+      background: #07132B; /* Usando el color primary */
+      color: white;
+    }
+    
+    /* Estilos del Formulario Replicados */
+    .contact-form {
+      max-width: 600px; /* Limita el ancho del formulario */
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-size: 16px;
+      backdrop-filter: blur(5px);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background: #4A90E2; /* Color secondary */
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #3b82f6;
+    }
+    
+    /* Estilos de Footer Replicados */
+    .footer {
+      background: #0f172a;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-menu { display: block; }
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#07132B",
+            secondary: "#4A90E2",
+            accent: "#FF6B35",
+            neutral: {
+              50: "#FFFFFF",
+              100: "#F5F5F5",
+              200: "#E5E5E5",
+              800: "#333333",
+            },
+          },
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-poppins bg-white">
+  <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3 cursor-pointer" onclick="window.location.href='index.html'">
+          <div class="bg-primary text-white p-2 rounded-lg">
+            <i class="fas fa-graduation-cap text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-primary">CEP MI MUNDO FELIZ</h1>
+            <p class="text-xs text-neutral-800">
+              Formando mentes, transformando vidas
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="nosotros.html" class="nav-link">Nosotros</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="estudiar-aqui.html" class="nav-link">¿Porque estudiar aquí?</a>
+          <a href="Contacto.html" class="nav-link active" data-page="contacto">Contacto</a>
+          <a href="matricula.html" class="nav-link">Matrícula</a>
+          <button onclick="window.location.href='/login.html'" class="btn-primary px-6 py-2">
+            <i class="fas fa-sign-in-alt mr-2"></i>Iniciar Sesión
+          </button>
+        </div>
+
+        <button class="lg:hidden text-primary" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars text-xl" id="menu-icon"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="lg:hidden mt-4 pb-4 border-t border-neutral-200 hidden">
+        <div class="flex flex-col space-y-4 mt-4">
+          <a href="index.html" class="nav-link-mobile">Inicio</a>
+          <a href="nosotros.html" class="nav-link-mobile">Nosotros</a>
+          <a href="blog.html" class="nav-link-mobile">Blog</a>
+          <a href="estudiar-aqui.html" class="nav-link-mobile">¿Porque estudiar aquí?</a>
+          <a href="Contacto.html" class="nav-link-mobile active">Contacto</a>
+          <a href="matricula.html" class="nav-link-mobile">Matrícula</a>
+          <button onclick="window.location.href='login.html'" class="btn-primary w-full py-3 mt-4">
+            <i class="fas fa-sign-in-alt mr-2"></i>Iniciar Sesión
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="pt-20">
+    <section class="hero-section-secondary">
+        <div class="relative z-20 container mx-auto px-4 text-center text-white">
+            <nav class="breadcrumb mb-4">
+                <span onclick="window.location.href='index.html'" class="cursor-pointer hover:text-accent">Inicio</span>
+                <i class="fas fa-chevron-right mx-2"></i>
+                <span>Contacto</span>
+            </nav>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-2">
+                Estamos Listos Para Ayudarte
+            </h1>
+            <p class="text-xl mb-4">
+                Comunícate con nosotros para cualquier consulta o información.
+            </p>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+      <div class="container mx-auto px-4" data-aos="fade-up">
+        
+        <h2 class="text-3xl lg:text-4xl font-bold text-white text-center mb-10">
+          Envíanos tu Consulta
+        </h2>
+
+        <div class="contact-form">
+          <h3 class="text-2xl mb-6 text-center font-semibold">Completa el formulario y te contactaremos</h3>
+          
+          <form id="contact-form" action="#" method="POST">
+            
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Tu Nombre Completo" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Tu Número de Teléfono (Opcional)">
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Escribe tu Mensaje o Consulta Aquí" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane mr-2"></i>
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-12 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">¿Prefieres el contacto directo?</h2>
+            <p class="text-lg text-white/90 mb-6">Llámanos al (51) 987 654 321 o escríbenos a info@mimundofeliz.edu.pe</p>
+            <a href="matricula.html" class="btn-accent px-6 py-3 text-lg font-semibold inline-block">
+                <i class="fas fa-user-plus mr-2"></i>VER PROCESO DE MATRÍCULA
+            </a>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div class="footer-section">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="bg-secondary text-white p-2 rounded-lg">
+              <i class="fas fa-graduation-cap text-xl"></i>
+            </div>
+            <h4 class="text-xl font-bold text-white">CEP MI MUNDO FELIZ</h4>
+          </div>
+          <p class="text-sm text-white/70">
+            Formando mentes, transformando vidas con educación de excelencia y valores sólidos.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="font-semibold text-white mb-4">Explorar</h4>
+          <ul>
+            <li><a href="index.html" class="text-white/70 hover:text-secondary text-sm">Inicio</a></li>
+            <li><a href="nosotros.html" class="text-white/70 hover:text-secondary text-sm">Nosotros</a></li>
+            <li><a href="blog.html" class="text-white/70 hover:text-secondary text-sm">Blog</a></li>
+            <li><a href="matricula.html" class="text-white/70 hover:text-secondary text-sm">Matrícula</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="font-semibold text-white mb-4">Información</h4>
+          <p class="text-sm text-white/70 mt-2">
+            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>Av. Los Tulipanes 123, Lima, Perú
+          </p>
+          <p class="text-sm text-white/70 mt-2">
+            <i class="fas fa-phone mr-2 text-secondary"></i>(51) 987 654 321
+          </p>
+          <p class="text-sm text-white/70 mt-2">
+            <i class="fas fa-envelope mr-2 text-secondary"></i>info@mimundofeliz.edu.pe
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="font-semibold text-white mb-4">Síguenos</h4>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="text-white/70 hover:text-secondary"><i class="fab fa-facebook-f text-xl"></i></a>
+            <a href="#" class="text-white/70 hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+            <a href="#" class="text-white/70 hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#" class="text-white/70 hover:text-secondary"><i class="fab fa-youtube text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 CEP Mi Mundo Feliz. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Función para el menú móvil
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const icon = document.getElementById("menu-icon");
+      if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } else {
+        menu.classList.add("hidden");
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    }
+  </script>
+</body>
+
+</html>
