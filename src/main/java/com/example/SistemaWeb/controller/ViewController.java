@@ -26,4 +26,14 @@ public class ViewController {
         return "login";  // Servir login.html
     }
 
+    @GetMapping("/contacto")
+    public String contacto() {
+        return "contacto";  // Servir contacto.html
+    }
+
+    @GetMapping("/nosotros")
+    public String nosotros() {
+        return "nosotros";  // Servir nosotros.html
+    }
+
 }
